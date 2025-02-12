@@ -52,9 +52,6 @@
       <a href="#methodology">Methodology</a>
       <a href="#results">Results</a>
       <a href="#supplementary_videos">Supplementary Videos</a>
-      <button class="toggle-btn" onclick="toggleDarkMode()">
-        Toggle Dark Mode
-      </button>
     </nav>
 
 
@@ -87,7 +84,7 @@
     </div>
 
     <div class="content-section" id="figure1">
-      <img src="Assets/figure1.png" style="display: block; margin: 0 auto; width: 100%;">
+      <img src="Assets/motivation.png" style="display: block; margin: 0 auto; width: 100%;">
       <p style="text-align: center;">How to detect failures during rollouts without a priori knowledge of diverse failure modes and the collection of failure data?</p>
     </div>
 
@@ -98,13 +95,13 @@
 
     <div class="content-section" id="methodology">
       <h2>Methodology</h2>
-      <p>We propose a two-stage approach to failure detection as demonstrated below:</p>
+      <img src="Assets/method.png" style="display: block; margin: 0 auto; width: 100%;">
+      <p>We propose a two-stage approach to failure detection as demonstrated above:</p>
       <ul>
         <li> <b>(Left - Stage I)</b> Multi-view camera images and robot states are distilled into failure detection scalar scores. Images are first passed through a feature extractor and then, along with robot states, constitute observations. Both observations and generated future robot actions can serve as inputs to a score network. This network outputs scalar scores that capture characteristics of successful demonstration data.</li>
         <li> <b>(Middle - Stage II)</b> Scores from a calibration set of successful rollouts are then used to compute a mean and band width to build the time-varying conformal prediction threshold.</li>
         <li> <b>(Right - Runtime Failure Detection)</b> A successful trajectory (bottom) has scores that consistently remain below the threshold. When a failure occurs (top), such as failure to fold the towel, the score spikes above the threshold, triggering failure detection (red box).</li>
       </ul>
-      <img src="Assets/method.png" style="display: block; margin: 0 auto; width: 100%;">
     </div>
 
     <div class="content-section" id="results">
