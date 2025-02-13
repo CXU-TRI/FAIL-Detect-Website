@@ -117,7 +117,7 @@
       <img src="Assets/Table1-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
       <p style="text-align: center;">Table 1: Overview of score methods evaluated in this work..</p>
 
-      We focus on the following research questions:
+      <p style="font-size: 18px;">We focus on the following research questions:</p>
       
       <div class="subsection" id="research-question-2"></div>
         <h3>How performant is failure detection without failure data?</h3>
@@ -140,8 +140,8 @@
         <h3>What is the impact of learned vs. post-hoc scores on failure detection?</h3>
         <p>We found that learned scores (i.e., score networks are trained to minimize certain objectives) are more effective than post-hoc scores. Specifically,
           <ul>
-            <li>Our novel learned logpZO score within the FAIL-Detect framework is the most consistent in performance (Figures 1 and 2).</li>
-            <li>Post-hoc methods are often at the extremes of performance (either doing well or poorly) depending on the particular setting (Figures 1 and 2).</li>
+            <li>Our novel learned logpZO score within the FAIL-Detect framework is the most consistent in performance (Figures 1 and 2 above).</li>
+            <li>Post-hoc methods are often at the extremes of performance (either doing well or poorly) depending on the particular setting (Figures 1 and 2 above).</li>
             <li>Learned methods are more discriminative with better score separation between successful and failed trajectories compared to post-hoc approaches (Figure 3).</li>
           </ul>
         </p>
@@ -153,8 +153,8 @@
         <h3>Do failure detections align with human intuition?</h3>
         <p>FAIL-Detect's alerts demonstrate strong correlation with observable failure indications in the environment 
           <ul>
-            <li>In Figure 4, when scores exceed the decision threshold, these moments often align with meaningful changes in the physical state of the task.</li>
-            <li>In Figure 5, we embed such alerts in the continuous rollout video to highlight the correlation between failure detection and observable failure indications.</li>
+            <li>When scores exceed the decision threshold, these moments often align with meaningful changes in the physical state of the task (Figure 4).</li>
+            <li>We embed such alerts in the continuous rollout video to highlight the correlation between failure detection and observable failure indications (Figure 5).</li>
           </ul>
           By examining executions within temporal windows surrounding a failure detection, one can efficiently identify failure types for subsequent analysis.
         </p>
