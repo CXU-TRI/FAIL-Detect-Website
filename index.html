@@ -179,7 +179,7 @@
       <button class="bibtex-copy-button" onclick="copyBibTeX()">
         Copy to Clipboard
       </button>
-      <pre>
+      <pre id="bibtex-content">
         <!-- Please edit only below details -->
         <code class="language-bibtex">
           @inproceedings{xu2025can,
@@ -191,5 +191,15 @@
         </code>
       </pre>
     </div>
+    <script>
+      function copyBibTeX() {
+        const bibtexContent = document.getElementById('bibtex-content').innerText;
+        navigator.clipboard.writeText(bibtexContent).then(() => {
+          alert('BibTeX copied to clipboard!');
+        }, (err) => {
+          console.error('Could not copy text: ', err);
+        });
+      }
+    </script>
   </body>
 </html>
