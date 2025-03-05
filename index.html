@@ -1,185 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Main Step: Edit below title -->
-    <title>FAIL-Detect: Detect Failures Without Failure Data</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="" />
-    <meta
-      name="keywords"
-      content="research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Main Step: Edit below title -->
+  <title>FAIL-Detect: Detect Failures Without Failure Data</title>
 
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-70.png"
-      sizes="70x70"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-72.png"
-      sizes="72x72"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="Assets/Favicon/icons8-research-color-96.png"
-      sizes="96x96"
-      type="image/png"
-    />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="" />
+  <meta name="keywords"
+    content="research papers, academic papers, AI research, robotics research, machine learning, published papers, scientific papers, academic journals" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <a href="#abstract">Abstract</a>
-      <a href="#methodology">Methodology</a>
-      <a href="#results">Results</a>
-      <a href="#supplementary_videos">Supplementary Videos</a>
-    </nav>
+  <link rel="icon" href="Assets/Favicon/icons8-research-color-16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="Assets/Favicon/icons8-research-color-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="Assets/Favicon/icons8-research-color-70.png" sizes="70x70" type="image/png" />
+  <link rel="icon" href="Assets/Favicon/icons8-research-color-72.png" sizes="72x72" type="image/png" />
+  <link rel="icon" href="Assets/Favicon/icons8-research-color-96.png" sizes="96x96" type="image/png" />
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="#abstract">Abstract</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#results">Results</a>
+    <a href="#supplementary_videos">Supplementary Videos</a>
+  </nav>
 
 
-    <div class="header">
-      <h1>Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies</h1>
-      <div class="authors">
-        <p>
-          <a href="https://hamrel-cxu.github.io/">Chen Xu</a><sup>1</sup>,
-          <a href="https://www.linkedin.com/in/tony-nguyen-22389669/">Tony Khuong Nguyen</a><sup>1</sup>,
-          <a href="#">Emma Dixon</a><sup>1</sup>,
-          <a href="https://www.linkedin.com/in/christopher-rodriguez94303/">Christopher Rodriguez</a><sup>1</sup>,
-          <a href="https://www.linkedin.com/in/patrick-tree-miller-20613b45/">Patrick Miller</a><sup>1</sup>,
-          <a href="https://scholar.google.com.au/citations?hl=en&user=1Vqlm0kAAAAJ&view_op=list_works">Robert Lee</a><sup>1</sup>,
-          <a href="https://www.linkedin.com/in/paarth-shah-bb6743b1/">Paarth Shah</a><sup>1</sup>,
-          <a href="https://scholar.google.com/citations?user=2xjjS3oAAAAJ&hl=en&oi=ao">Rares Andrei Ambrus</a><sup>1</sup>,
-          <a href="https://harukins.github.io/">Haruki Nishimura</a><sup>1</sup>,
-          <a href="https://mashaitkina.weebly.com/">Masha Itkina</a><sup>1</sup>
-        </p>
-        <p>
-          <sup>1</sup>Toyota Research Institute &nbsp;&nbsp
-        </p>
-      </div>
+  <div class="header">
+    <h1>Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning
+      Policies</h1>
+    <div class="authors">
+      <p>
+        <a href="https://hamrel-cxu.github.io/">Chen Xu</a><sup>1</sup>,
+        <a href="https://www.linkedin.com/in/tony-nguyen-22389669/">Tony Khuong Nguyen</a><sup>1</sup>,
+        <a href="#">Emma Dixon</a><sup>1</sup>,
+        <a href="https://www.linkedin.com/in/christopher-rodriguez94303/">Christopher Rodriguez</a><sup>1</sup>,
+        <a href="https://www.linkedin.com/in/patrick-tree-miller-20613b45/">Patrick Miller</a><sup>1</sup>,
+        <a href="https://scholar.google.com.au/citations?hl=en&user=1Vqlm0kAAAAJ&view_op=list_works">Robert
+          Lee</a><sup>1</sup>,
+        <a href="https://www.linkedin.com/in/paarth-shah-bb6743b1/">Paarth Shah</a><sup>1</sup>,
+        <a href="https://scholar.google.com/citations?user=2xjjS3oAAAAJ&hl=en&oi=ao">Rares Andrei
+          Ambrus</a><sup>1</sup>,
+        <a href="https://harukins.github.io/">Haruki Nishimura</a><sup>1</sup>,
+        <a href="https://mashaitkina.weebly.com/">Masha Itkina</a><sup>1</sup>
+      </p>
+      <p>
+        <sup>1</sup>Toyota Research Institute &nbsp;&nbsp
+      </p>
     </div>
+  </div>
 
 
-    <div class="buttons">
-      <a href="#" target="_blank">Paper</a>
-      <a href="https://github.com/chen-xu-pi/FAIL-Detect" target="_blank">Code</a>
-      <a href="#bibtex">BibTex</a>
-    </div>
+  <p style="text-align: center; font-size: 18px;">How do we detect policy failures during a rollout without a priori
+    knowledge of potential failures?</p>
 
-    <div class="content-section" id="figure1">
-      <img src="Assets/motivation.png" style="display: block; margin: 0 auto; width: 100%;">
-      <p style="text-align: center; font-size: 16px;">How to detect failures during rollouts without a priori knowledge of diverse failure modes and the collection of failure data?</p>
-    </div>
+  <p style="text-align: center;">Our FAIL-Detect: no raise alarms when policy is successful</p>
+  <video src="Assets/2025_sim_videos/square_50_succ.mp4" controls style="display: inline-block; width: 32%;" autoplay
+    loop muted></video>
+  <video src="Assets/2025_sim_videos/transport_56_succ.mp4" controls style="display: inline-block; width: 32%;" autoplay
+    loop muted></video>
+  <video src="Assets/2025_sim_videos/toolhang_52_succ.mp4" controls style="display: inline-block; width: 32%;" autoplay
+    loop muted></video>
+  <p style="text-align: center;">Our FAIL-Detect: raised alarms (red border) when policy fails</p>
+  <video src="Assets/2025_sim_videos/square_75_fail_at_48.mp4" controls style="display: inline-block; width: 32%;"
+    autoplay loop muted></video>
+  <video src="Assets/2025_sim_videos/transport_83_fail_at_96.mp4" controls style="display: inline-block; width: 32%;"
+    autoplay loop muted></video>
+  <video src="Assets/2025_sim_videos/toolhang_79_fail_at_208.mp4" controls style="display: inline-block; width: 32%;"
+    autoplay loop muted></video>
 
-    <div class="abstract" id="abstract">
-      <h2>Abstract</h2>
-      <p>Recent years have witnessed impressive robotic manipulation systems driven by advances in imitation learning and generative modeling, such as diffusion- and flow-based approaches. As robot policy performance increases, so does the complexity and time horizon of achievable tasks, inducing unexpected and diverse failure modes that are difficult to predict a priori. To enable trustworthy policy deployment in safety-critical human environments, reliable runtime failure detection becomes important during policy inference. However, most existing failure detection approaches rely on prior knowledge of failure modes and require failure data during training, which imposes a significant challenge in practicality and scalability. In response to these limitations, we present FAIL-Detect, a modular two-stage approach for failure detection in imitation learning-based robotic manipulation. To accurately identify failures from successful training data, we frame the problem as sequential out-of-distribution (OOD) detection. We first distill policy inputs and outputs into scalar signals that correlate with policy failures and capture epistemic uncertainty. FAIL-Detect then employs conformal prediction (CP) as a versatile framework for uncertainty quantification with statistical guarantees. Empirically, we thoroughly investigate both learned and post-hoc scalar signal candidates on diverse robotic manipulation tasks. Our experiments show learned signals based on adapted random networks and a novel flow-based density estimator to be most effective. Furthermore, our method detects failures more accurately and faster than state-of-the-art (SOTA) failure detection baselines. These results highlight the potential of FAIL-Detect to enhance the safety and reliability of imitation learning-based robotic systems as they progress toward real-world deployment.</p>
-    </div>
 
-    <div class="content-section" id="methodology">
-      <h2>Methodology</h2>
-      <img src="Assets/method.png" style="display: block; margin: 0 auto; width: 100%;">
-      <p>We propose a two-stage approach to failure detection as demonstrated above:</p>
-      <ul>
-        <li> <b>(Left - Stage I)</b> Multi-view camera images and robot states are distilled into failure detection scalar scores. Images are first passed through a feature extractor and then, along with robot states, constitute observations. Both observations and generated future robot actions can serve as inputs to a score network. This network outputs scalar scores that capture characteristics of successful demonstration data.</li>
-        <li> <b>(Middle - Stage II)</b> Scores from a calibration set of successful rollouts are then used to compute a mean and band width to build the time-varying conformal prediction threshold.</li>
-        <li> <b>(Right - Runtime Failure Detection)</b> A successful trajectory (bottom) has scores that consistently remain below the threshold. When a failure occurs (top), such as failure to fold the towel, the score spikes above the threshold, triggering failure detection (red box).</li>
-      </ul>
-    </div>
+  <!-- <div class="content-section" id="figure1">
+    <img src="Assets/motivation.png" style="display: block; margin: 0 auto; width: 100%;">
+    <p style="text-align: center; font-size: 18px;">How do we detect policy failures during a rollout without a priori
+    knowledge of potential failures?</p>
+  </div> -->
 
-    <div class="content-section" id="results">
-      <h2>Results</h2>
+  <div class="abstract" id="abstract">
+    <h2>Abstract</h2>
+    <p>Recent years have witnessed impressive robotic manipulation systems driven by advances in imitation learning and
+      generative modeling, such as diffusion- and flow-based approaches. As robot policy performance increases, so does
+      the complexity and time horizon of achievable tasks, inducing unexpected and diverse failure modes that are
+      difficult to predict a priori. To enable trustworthy policy deployment in safety-critical human environments,
+      reliable runtime failure detection becomes important during policy inference. However, most existing failure
+      detection approaches rely on prior knowledge of failure modes and require failure data during training, which
+      imposes a significant challenge in practicality and scalability. In response to these limitations, we present
+      FAIL-Detect, a modular two-stage approach for failure detection in imitation learning-based robotic manipulation.
+      To accurately identify failures from successful training data, we frame the problem as sequential
+      out-of-distribution (OOD) detection. We first distill policy inputs and outputs into scalar signals that correlate
+      with policy failures and capture epistemic uncertainty. FAIL-Detect then employs conformal prediction (CP) as a
+      versatile framework for uncertainty quantification with statistical guarantees. Empirically, we thoroughly
+      investigate both learned and post-hoc scalar signal candidates on diverse robotic manipulation tasks. Our
+      experiments show learned signals based on adapted random networks and a novel flow-based density estimator to be
+      most effective. Furthermore, our method detects failures more accurately and faster than state-of-the-art (SOTA)
+      failure detection baselines. These results highlight the potential of FAIL-Detect to enhance the safety and
+      reliability of imitation learning-based robotic systems as they progress toward real-world deployment.</p>
+  </div>
 
-      As outlined in Table 1 below, we 
-      <ul></ul>
-        <li>Propose a novel score network (<b>logpZO</b>).</li>
-        <li>Adapt several approaches not originally designed for failure detection.</li>
-        <li>Compare against two SOTA failure detection baselines.</li>
-      </ul>
+  <div class="content-section" id="methodology">
+    <h2>Methodology</h2>
+    <img src="Assets/method.png" style="display: block; margin: 0 auto; width: 150%;">
+    <p>We propose a two-stage approach to failure detection:</p>
+    <ul>
+      <li> <b>(Left - Stage I)</b> Multi-view camera images and robot states are distilled into failure detection scalar
+        scores. Images passed through a feature extractor along with robot states constitute observations.
+        Both observations and generated future robot actions can serve as inputs to a score network. This
+        network outputs scalar scores that capture characteristics of successful demonstration data.</li>
+      <li> <b>(Middle - Stage II)</b> Scores from a calibration set of successful rollouts are then used to compute a
+        mean and band width to build the time-varying conformal prediction threshold.</li>
+      <li> <b>(Right - Runtime Failure Detection)</b> A successful trajectory (bottom) has scores that consistently
+        remain below the threshold. When a failure occurs (top), such as failure to fold the towel, the score spikes
+        above the threshold, triggering failure detection (red box).</li>
+    </ul>
+  </div>
 
-      <img src="Assets/Table1-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-      <p style="text-align: center;">Table 1: Overview of score methods evaluated in this work..</p>
+  <div class="content-section" id="results">
+    <h2>Results</h2>
 
-      <p style="font-size: 18px;">We focus on the following research questions:</p>
-      
-      <div class="subsection" id="research-question-2"></div>
-        <h3>How performant is failure detection without failure data?</h3>
-        <p>We note that FAIL-Detect achieves high accuracy with fast detection:
-          
-          <ul>
-            <li>The average best accuracy across FAIL-Detect's score candidates is  ~75% in simulation (Figure 1) and ~74% on the robot hardware tasks (Figure 2).</li>
-            <li>FAIL-Detect maintains viable detection time across various score designs, with average best detection time faster than successful trajec- tory completion.</li>
-          </ul>
-        </p>
-        
-        <img src="Assets/Fig4-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-        <p style="text-align: center;">Figure 1: Quantitative results on simulation tasks.</p>
+    As outlined in Table 1 below, we
+    <ul></ul>
+    <li>Propose a novel score network (<b>logpZO</b>).</li>
+    <li>Adapt several approaches not originally designed for failure detection.</li>
+    <li>Compare against two SOTA failure detection baselines.</li>
+    </ul>
 
-        <img src="Assets/Fig5-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-        <p style="text-align: center;">Figure 2: Quantitative results on robot hardware tasks.</p>
-      </div>
+    <img src="Assets/Table1-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+    <p style="text-align: center;">Table 1: Overview of score methods evaluated in this work..</p>
 
-      <div class="subsection" id="research-question-1">
-        <h3>What is the impact of learned vs. post-hoc scores on failure detection?</h3>
-        <p>We found that learned scores (i.e., score networks are trained to minimize certain objectives) are more effective than post-hoc scores. Specifically,
-          <ul>
-            <li>Our novel learned logpZO score within the FAIL-Detect framework is the most consistent in performance (Figures 1 and 2 above).</li>
-            <li>Post-hoc methods are often at the extremes of performance (either doing well or poorly) depending on the particular setting (Figures 1 and 2 above).</li>
-            <li>Learned methods are more discriminative with better score separation between successful and failed trajectories compared to post-hoc approaches (Figure 3).</li>
-          </ul>
-        </p>
-        <img src="Assets/Fig6-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-        <p style="text-align: center;">Figure 3: Qualitative results of failure detection scores overlaid with CP bands.</p>
-      </div>
-      
-      <div class="subsection" id="research-question-3">
-        <h3>Do failure detections align with human intuition?</h3>
-        <p>FAIL-Detect's alerts demonstrate strong correlation with observable failure indications in the environment 
-          <ul>
-            <li>When scores exceed the decision threshold, these moments often align with meaningful changes in the physical state of the task (Figure 4).</li>
-            <li>We embed such alerts in the continuous rollout video to highlight the correlation between failure detection and observable failure indications (Figure 5).</li>
-          </ul>
-          By examining executions within temporal windows surrounding a failure detection, one can efficiently identify failure types for subsequent analysis.
-        </p>
-        <img src="Assets/Fig7-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-        <p style="text-align: center;">Figure 4: Physical interpretation of logpZO, the most successful and robust learned score method.</p>
-        
-        <img src="Assets/real_towel_succ.gif" style="display: inline-block; width: 49%;">
-        <img src="Assets/real_spill_succ.gif" style="display: inline-block; width: 49%;">
-        <img src="Assets/real_towel_failure.gif" style="display: inline-block; width: 49%;">
-        <img src="Assets/real_spill_failure.gif" style="display: inline-block; width: 49%;">
-        <p style="text-align: center;">Figure 5: FAIL-Detect's alerts in rollout videos on robot hardware tasks.</p>
-      </div>
-    </div>
+    <p>We focus on the following research questions:</p>
 
-    <div class="content-section" id="supplementary_videos">
-      <h2>Supplementary Videos</h2>
-      <video src="Assets/video.mp4" controls style="display: block; margin: 0 auto; width: 100%;"></video>
-    </div>
+    <div class="subsection" id="research-question-2"></div>
+    <h3>How performant is failure detection without failure data?</h3>
+    <p>We note that FAIL-Detect achieves high failure detection accuracy with fast detection (details in the paper):
 
-    <div class="bibtex-section" id="bibtex">
-      <h2>BibTeX</h2>
-      <button class="bibtex-copy-button" onclick="copyBibTeX()">
-        Copy to Clipboard
-      </button>
-      <pre id="bibtex-content">
+    <ul>
+      <li>The average best accuracy across FAIL-Detect's score candidates is ~75% in simulation and ~74% on
+        the robot hardware tasks.</li>
+      <li>FAIL-Detect maintains viable detection time across various score designs, with average best detection time
+        faster than successful trajectory completion.</li>
+    </ul>
+    </p>
+
+    <!-- <img src="Assets/Fig4-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+    <p style="text-align: center;">Figure 1: Quantitative results on simulation tasks.</p>
+
+    <img src="Assets/Fig5-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+    <p style="text-align: center;">Figure 2: Quantitative results on robot hardware tasks.</p> -->
+  </div>
+
+  <div class="subsection" id="research-question-1">
+    <h3>What is the impact of learned vs. post-hoc scores on failure detection?</h3>
+    <p>We found that learned scores (i.e., score networks are trained to minimize certain objectives) are more effective
+      than post-hoc scores. Specifically,
+    <ul>
+      <li>Our novel learned logpZO score within the FAIL-Detect framework is the most consistent in performance (Figures
+        1 and 2 above).</li>
+      <li>Post-hoc methods are often at the extremes of performance (either doing well or poorly) depending on the
+        particular setting (Figures 1 and 2 above).</li>
+      <li>Learned methods are more discriminative with better score separation between successful and failed
+        trajectories compared to post-hoc approaches (Figure 3).</li>
+    </ul>
+    </p>
+    <img src="Assets/Fig6-1.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+    <p style="text-align: center;">Figure 3 (Robobimic - Square): Qualitative results of failure detection scores
+      overlaid with CP bands.</p>
+  </div>
+
+  <div class="subsection" id="research-question-3">
+    <h3>Do failure detections align with human intuition?</h3>
+    <p>FAIL-Detect's alerts demonstrate strong correlation with observable failure indications in the environment
+    <ul>
+      <li>When scores exceed the decision threshold, these moments often align with meaningful changes in the physical
+        state of the task (Figure 4).</li>
+      <!-- <li>We embed such alerts in the continuous rollout video to highlight the correlation between failure detection
+        and observable failure indications (Figure 5).</li> -->
+      <li>By examining executions within temporal windows surrounding a failure detection, one can efficiently identify
+        failure types for subsequent analysis.</li>
+    </ul>
+    </p>
+    <img src="Assets/Fig7_1.pdf" style="display: block; margin: 0 auto; width: 100%; max-width: 100%;">
+    <img src="Assets/Fig7_2.pdf" style="display: block; margin: 0 auto; width: 100%; max-width: 100%;">
+    <p style="text-align: center;">Figure 4: Physical interpretation of logpZO, the most successful and robust learned
+      score method.</p>
+  </div>
+  </div>
+
+  <div class="content-section" id="supplementary_videos">
+    <h2>Supplementary Videos</h2>
+    <video src="Assets/video.mp4" controls style="display: block; margin: 0 auto; width: 100%;"></video>
+  </div>
+
+  <div class="bibtex-section" id="bibtex">
+    <h2>BibTeX</h2>
+    <button class="bibtex-copy-button" onclick="copyBibTeX()">
+      Copy to Clipboard
+    </button>
+    <pre id="bibtex-content">
         <!-- Please edit only below details -->
         <code class="language-bibtex">
           @inproceedings{xu2025can,
@@ -190,16 +210,17 @@
           }
         </code>
       </pre>
-    </div>
-    <script>
-      function copyBibTeX() {
-        const bibtexContent = document.getElementById('bibtex-content').innerText;
-        navigator.clipboard.writeText(bibtexContent).then(() => {
-          alert('BibTeX copied to clipboard!');
-        }, (err) => {
-          console.error('Could not copy text: ', err);
-        });
-      }
-    </script>
-  </body>
+  </div>
+  <script>
+    function copyBibTeX() {
+      const bibtexContent = document.getElementById('bibtex-content').innerText;
+      navigator.clipboard.writeText(bibtexContent).then(() => {
+        alert('BibTeX copied to clipboard!');
+      }, (err) => {
+        console.error('Could not copy text: ', err);
+      });
+    }
+  </script>
+</body>
+
 </html>
