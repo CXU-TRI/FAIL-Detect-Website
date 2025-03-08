@@ -67,7 +67,7 @@
     knowledge of potential failures?</p>
 
   <p style="text-align: center; font-size: 16px;">Our FAIL-Detect: raised alarms (<span style="color: red;">red
-      border</span>) when policy fails, and no raised alarms when policy is successful</p>
+      border</span>) when policy fails, and no raised alarms when policy succeeds</p>
   <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
     <video src="Assets/2025_real_videos/FoldTowelRed_2024-08-05T17-05-51-07-00_Detection_456.mp4" controls autoplay loop
       muted style="width: 49%;"></video>
@@ -137,8 +137,8 @@
       generative modeling, such as diffusion- and flow-based approaches. As robot policy performance increases, so does
       the complexity and time horizon of achievable tasks, inducing <b>unexpected and diverse failure modes</b> that
       are difficult to predict a priori. To enable trustworthy policy deployment in safety-critical human environments,
-      reliable runtime failure detection becomes important during policy inference. However, most existing failure
-      detection approaches <b>rely on prior knowledge of failure modes and require failure data during training</b>,
+      reliable runtime failure detection becomes important during policy inference. However, <b>most existing failure
+        detection approaches rely on prior knowledge of failure modes and require failure data during training</b>,
       which imposes a significant challenge in practicality and scalability. In response to these limitations, we
       present <b>FAIL-Detect</b>, a modular two-stage approach for failure detection in imitation learning-based robotic
       manipulation. To accurately identify failures from successful training data, we frame the problem as <b>sequential
